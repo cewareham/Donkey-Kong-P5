@@ -4,6 +4,7 @@ let cc = {
   ez   : 0,
   norm : 1,
   hrd  : 2,
+  SPACE: 32,    // keycode for space bar
   gameDifficulty: 0,
   menu: {"x0":7, "y0":0, "x1":0, "y1":0},
   // next line - CANVAS STYLE SETTINGS to center canvas in browser-horizontally & vertically
@@ -16,7 +17,8 @@ let cc = {
     "normal"      : { "path" : "normal.png" },
     "hard"        : { "path" : "hard.png" },
     "grow"        : { "path" : "grow.png" },
-    "shrink"      : { "path" : "shrink.png" }
+    "shrink"      : { "path" : "shrink.png" },
+    "intro11"     : { "path" : "intro11.png"}
   },
   sounds: {
     "coin_credit" : { "path" : "coin_credit.wav" }
@@ -26,7 +28,8 @@ let cc = {
                   { "rank" : "2", "score" : "169400", "name" : "GOR-DEE" },
                   { "rank" : "3", "score" : "163700", "name" : "SPEEDMASTER24" },
                   { "rank" : "4", "score" : "152500", "name" : "COLINMACC" },
-                  { "rank" : "5", "score" : "151700", "name" : "CON" }            
+                  //{ "rank" : "5", "score" : "151700", "name" : "CON" }            
+                  { "rank" : "5", "score" : "251700", "name" : "CON" }            
                 ],
     "normal" :  [ { "rank" : "1", "score" : "128200", "name" : "PIXELATOR505" },
                   { "rank" : "2", "score" : "116800", "name" : "CON" },
@@ -40,6 +43,11 @@ let cc = {
                   { "rank" : "4", "score" : "083700", "name" : "NYAONYAO" },
                   { "rank" : "5", "score" : "076000", "name" : "NYAONYAO" }            
                 ]
+   },
+   noHighScores: {
+    "easy" :    [ { "rank" : "1", "score" : "000000", "name" : "none" }],
+    "normal" :  [ { "rank" : "1", "score" : "000000", "name" : "none" }],
+    "hard" :    [ { "rank" : "1", "score" : "000000", "name" : "none" }]
    }
  }
  
